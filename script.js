@@ -20,9 +20,10 @@ function checkResult() {
     console.log("Final Grade:", finalGrade);
     console.log("Passed:", hasPassed);
     console.log("Excellent Performance:", isExcellent);
-    document.getElementById("result").innerHTML = `<p> Student Name: ${studentName}</p>
-                                                    <p> Final Grade: ${finalGrade}</p>
-                                                    <p> Result: Passed</p>
+    document.getElementById("result").innerHTML = 
+                    `<p> Student Name: ${studentName}</p><br>
+                        <p> Final Grade: ${finalGrade}</p><br>
+                        <p> Result: Passed</p>
                                                     `;
     }
     else{
@@ -30,9 +31,10 @@ function checkResult() {
     console.log("Assignment Average: ", assignmentAverage);
     console.log("Final Grade:", finalGrade);
         console.log("Failed:", hasFailed);
-        document.getElementById("result").innerHTML = `<p> Student Name: ${studentName}</p>
-                                                    <p> Final Grade: ${finalGrade}</p>
-                                                    <p> Result: Failed</p>
+        document.getElementById("result").innerHTML = 
+                        `<p> Student Name: ${studentName}</p><br>
+                        <p> Final Grade: ${finalGrade}</p><br>
+                        <p> Result: Failed</p>
                                                     `;
     }
 }
