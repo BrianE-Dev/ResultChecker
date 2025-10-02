@@ -34,7 +34,7 @@ function checkResult() {
         document.getElementById("result").innerHTML = 
                         `<p> Student Name: ${studentName}</p><br>
                         <p> Final Grade: ${finalGrade}</p><br>
-                        <p> Result: Failed</p>
+                        <p> Result: Failed. Repeat this class</p>
                                                     `;
     }
 }
