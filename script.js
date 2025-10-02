@@ -20,13 +20,19 @@ function checkResult() {
     console.log("Final Grade:", finalGrade);
     console.log("Passed:", hasPassed);
     console.log("Excellent Performance:", isExcellent);
-    document.getElementById("result").innerHTML = "Passed";
+    document.getElementById("result").innerHTML = `<p> Student Name: ${studentName}</p>
+                                                    <p> Final Grade: ${finalGrade}</p>
+                                                    <p> Result: Passed</p>
+                                                    `;
     }
     else{
         console.log("Student Name:", studentName);
     console.log("Assignment Average: ", assignmentAverage);
     console.log("Final Grade:", finalGrade);
         console.log("Failed:", hasFailed);
-        document.getElementById("result").innerHTML = "Failed";
+        document.getElementById("result").innerHTML = `<p> Student Name: ${studentName}</p>
+                                                    <p> Final Grade: ${finalGrade}</p>
+                                                    <p> Result: Failed</p>
+                                                    `;
     }
 }

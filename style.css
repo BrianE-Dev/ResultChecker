@@ -9,12 +9,20 @@ body{
     padding: 20px;
 }
 .container{
-    max-width: 600px;
-    margin: 60px auto;
+    max-width: 400px;
+    margin: 60px 0 ;
     background: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 .container h1{
     text-align: center;
@@ -36,7 +44,7 @@ table, td{
 }
 .details{
     margin: 10px 0;
-    padding-left: 200px;
+    padding-left: 100px;
     color: #555;
 }
 .first_alt{
@@ -58,13 +66,34 @@ button{
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
 }
+.status{
+    margin-top: 150px;
+}
+.status h5{
+    margin-top: 30px;
+}
+.finalResult{
+    background-color: #02a571;
+    border-radius: 10px;
+    color:#333;
+    width: 300px;
+    height: 500px;
+}
 button:hover{
     background-color: #02a571;
-    color: #333;
+    color: #ffffff;
     transform: scale(1.05) translateY(-2px);
     
+}
+.container:hover{
+    transform: scale(1.05) translateY(-4px);
+}
+.finalResult:hover{
+    transform: scale(1.05) translateY(-4px);
+    background-color: #ddd;
+    color: #333;
 }
