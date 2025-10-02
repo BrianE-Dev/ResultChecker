@@ -2,9 +2,9 @@ console.log("Result Checker")
 function checkResult() {
     let studentName, assignment1, assignment2, finalExam;
     studentName = document.getElementById("s_name").value;
-    assignment1 = Number(document.getElementById("1st_A").value);
-    assignment2 = Number(document.getElementById("2nd_A").value);
-    finalExam = Number(document.getElementById("F_exam").value);
+    assignment1 = parseInt(document.getElementById("1st_A").value);
+    assignment2 = parseInt(document.getElementById("2nd_A").value);
+    finalExam = parseInt(document.getElementById("F_exam").value);
     
     let sum, assignmentAverage;
     sum = assignment1 + assignment2;
