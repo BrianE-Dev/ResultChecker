@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Result</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result Checker</h1>
+        <form action="">
+             <div class="wrap">
+                <p class="details"><em>Enter Student Details</em></p>
+        <table>
+            <tr class="first_alt">
+                <td><label for="s_name"><h4>Student Name:</h4></label></td>
+                <td><input type="text" id="s_name"></td>
+            </tr>
+            <tr class="second">
+                <td><label for="1st_A"><h4>First Assignment:</h4></label></td>
+                <td><input type="number" id="1st_A"></td>
+            </tr>
+            <tr class="first_alt">
+                <td><label for="2nd_A"><h4>Second Assignment:</h4   ></label></td>
+                <td><input type="number" id="2nd_A"></td>
+            </tr>
+            <tr class="second">
+                <td><label for="F_exam"><h4>Final Exam:</h4></label></td>
+                <td><input type="number" id="F_exam"></td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        </div>
+        </form>
+
+        <button onclick="checkResult()"><h3>Check Result</h3></button>
+        <div class="status">
+            <p>Status:</p><h3 id="result"></h3>
+        </div>
+    </div>
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
