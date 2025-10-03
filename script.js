@@ -9,10 +9,10 @@ function checkResult() {
     let sum, assignmentAverage;
     sum = assignment1 + assignment2;
     assignmentAverage = sum / 2;
-    const finalGrade = ((assignmentAverage * 0.4) + (finalExam * 0.6));
-    const hasPassed = finalGrade >= 70;
+    const finalGrade = (assignmentAverage + (finalExam * 0.6));
+    const hasPassed = finalGrade >= 60;
     const isExcellent = hasPassed && finalExam >= 90;
-    const hasFailed = finalGrade < 70;
+    const hasFailed = finalGrade < 60;
 
     if(hasPassed){
     console.log("Student Name:", studentName);
@@ -50,3 +50,5 @@ function checkResult() {
                         `;
     }
 }
+
+

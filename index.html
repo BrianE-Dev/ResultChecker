@@ -21,15 +21,28 @@
             </tr>
             <tr class="second">
                 <td><label for="1st_A"><h4>First Assignment:</h4></label></td>
-                <td><input type="number" id="1st_A"></td>
+                <td><input type="number" id="1st_A" max="40" maxlength="2" 
+                        oninput="
+                        if (this.value.length > 2) this.value = this.value.slice(0, 2);
+                        if (this.value > 40) this.value = 40;
+                        ">
+                </td>
             </tr>
             <tr class="first_alt">
                 <td><label for="2nd_A"><h4>Second Assignment:</h4   ></label></td>
-                <td><input type="number" id="2nd_A"></td>
+                <td><input type="number" id="2nd_A" max="40" maxlength="2" 
+                        oninput="
+                        if (this.value.length > 2) this.value = this.value.slice(0, 2);
+                        if (this.value > 40) this.value = 40;
+                        "></td>
             </tr>
             <tr class="second">
                 <td><label for="F_exam"><h4>Final Exam:</h4></label></td>
-                <td><input type="number" id="F_exam"></td>
+                <td><input type="number" id="F_exam" max="40" maxlength="2" 
+                        oninput="
+                        if (this.value.length > 2) this.value = this.value.slice(0, 2);
+                        if (this.value > 40) this.value = 60;
+                        "></td>
             </tr>
             <tr>
             </tr>
