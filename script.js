@@ -49,6 +49,27 @@ function checkResult() {
                         </div>
                         `;
     }
+
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+ 
+  function validateInput(input, max) {
+    input.addEventListener("input", function () {
+     
+      if (this.value.length > 2) {
+        this.value = this.value.slice(0, 2);
+      }
+     
+      if (parseInt(this.value) > max) {
+        this.value = max;
+      }
+    });
+  }
+  validateInput(document.getElementById("1st_A"), 40);
+  validateInput(document.getElementById("2nd_A"), 40);
+  validateInput(document.getElementById("F_exam"), 60);
+});
+
 
 
