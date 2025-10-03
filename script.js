@@ -21,10 +21,16 @@ function checkResult() {
     console.log("Passed:", hasPassed);
     console.log("Excellent Performance:", isExcellent);
     document.getElementById("result").innerHTML = 
-                    `<p> Student Name: ${studentName}</p><br>
-                        <p> Final Grade: ${finalGrade}</p><br>
-                        <p> Result: Passed</p>
-                                                    `;
+                    `
+                    <div class="finalResult">
+                    <div class="status">
+                            <p>RESULT:</p>
+                            <h5>Student Name: ${studentName}</h5><br>
+                            <h5>Final Grade: ${finalGrade}</h5><br>
+                            <h5>Result: Passed!</h5>
+                    </div>
+                    </div>
+                    `;
     }
     else{
         console.log("Student Name:", studentName);
@@ -32,9 +38,15 @@ function checkResult() {
     console.log("Final Grade:", finalGrade);
         console.log("Failed:", hasFailed);
         document.getElementById("result").innerHTML = 
-                        `<p> Student Name: ${studentName}</p><br>
-                        <p> Final Grade: ${finalGrade}</p><br>
-                        <p> Result: Failed. Repeat this class</p>
-                                                    `;
+                        `
+                        <div class="finalResult">
+                        <div class="status">
+                            <h4>RESULT:</h4>
+                            <h5>Student Name: ${studentName}</h5><br>
+                            <h5>Final Grade: ${finalGrade}</h5><br>
+                            <h5>Result: Failed! Repeat this class</h5>
+                        </div>
+                        </div>
+                        `;
     }
 }
