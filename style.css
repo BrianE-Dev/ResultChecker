@@ -109,7 +109,7 @@ button:hover{
 .finalResult:hover{
     transform: scale(1.05) translateY(-4px);
     background-color: #02a571;
-    color: #333;
+    color: #ffffff;
 }
 .finalResult_r:hover{
     transform: scale(1.05) translateY(-4px);
