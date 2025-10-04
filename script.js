@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     input.addEventListener("input", function () {
      
       if (this.value.length > 2) {
-        this.value = this.value.slice(0, 2); 
+        this.value = this.value.slice(0, 3); 
       }
      
       if (parseInt(this.value) > max) {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   validateInput(document.getElementById("1st_A"), 40);
   validateInput(document.getElementById("2nd_A"), 40);
-  validateInput(document.getElementById("F_exam"), 60);
+  validateInput(document.getElementById("F_exam"), 100);
 });
 
 
