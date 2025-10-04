@@ -1,14 +1,13 @@
 console.log("Result Checker")
 function checkResult() {
-    let studentName, assignment1, assignment2, finalExam;
-    studentName = document.getElementById("s_name").value;
-    assignment1 = parseInt(document.getElementById("1st_A").value);
-    assignment2 = parseInt(document.getElementById("2nd_A").value);
-    finalExam = parseInt(document.getElementById("F_exam").value);
     
-    let sum, assignmentAverage;
-    sum = assignment1 + assignment2;
-    assignmentAverage = sum / 2;
+   let studentName = document.getElementById("s_name").value;
+   let assignment1 = parseInt(document.getElementById("1st_A").value);
+   let assignment2 = parseInt(document.getElementById("2nd_A").value);
+   let finalExam = parseInt(document.getElementById("F_exam").value);
+    
+    let sum = assignment1 + assignment2;
+    let assignmentAverage = sum / 2;
     const finalGrade = (assignmentAverage + (finalExam * 0.6));
     const hasPassed = finalGrade >= 60;
     const isExcellent = hasPassed && finalExam >= 90;
@@ -19,36 +18,21 @@ function checkResult() {
     console.log("Final Grade:", finalGrade);
     console.log("Passed:", hasPassed);
     console.log("Excellent Performance:", isExcellent);
+   
     if(hasPassed){
-    
     document.getElementById("result").innerHTML = 
                     `
-                    <div class="finalResult">
+                    <div class="${hasPassed? "finalResult" : "finalResult_r"}">
                     <div class="status">
                             <p>RESULT:</p>
                             <h5>Student Name: ${studentName}</h5><br>
                             <h5>Final Grade: ${finalGrade}</h5><br>
-                            <h5>Result: Passed!</h5>
+                            <h5>Result: ${hasPassed? "Passed!" : "Failed! Repeat this class."}</h5>
+                            <h5>${isExcellent? "Excellent!" : "Try better next time."}</h5>>
                     </div>
                     </div>
                     `;
     }
-    else{
-       
-        document.getElementById("result").innerHTML = 
-                        `
-                        <div class="finalResult_r">
-                        <div class="status">
-                            <h4>RESULT:</h4>
-                            <h5>Student Name: ${studentName}</h5><br>
-                            <h5>Final Grade: ${finalGrade}</h5><br>
-                            <h5>Result: Failed! Repeat this class</h5>
-                        </div>
-                        </div>
-                        `;
-    }
-
-
 }
 
 document.addEventListener("DOMContentLoaded", () => {
