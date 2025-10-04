@@ -14,12 +14,13 @@ function checkResult() {
     const isExcellent = hasPassed && finalExam >= 90;
     const hasFailed = finalGrade < 60;
 
-    if(hasPassed){
     console.log("Student Name:", studentName);
     console.log("Assignment Average: ", assignmentAverage);
     console.log("Final Grade:", finalGrade);
     console.log("Passed:", hasPassed);
     console.log("Excellent Performance:", isExcellent);
+    if(hasPassed){
+    
     document.getElementById("result").innerHTML = 
                     `
                     <div class="finalResult">
@@ -33,13 +34,10 @@ function checkResult() {
                     `;
     }
     else{
-        console.log("Student Name:", studentName);
-    console.log("Assignment Average: ", assignmentAverage);
-    console.log("Final Grade:", finalGrade);
-        console.log("Failed:", hasFailed);
+       
         document.getElementById("result").innerHTML = 
                         `
-                        <div class="finalResult">
+                        <div class="finalResult_r">
                         <div class="status">
                             <h4>RESULT:</h4>
                             <h5>Student Name: ${studentName}</h5><br>
@@ -50,6 +48,7 @@ function checkResult() {
                         `;
     }
 
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     input.addEventListener("input", function () {
      
       if (this.value.length > 2) {
-        this.value = this.value.slice(0, 2);
+        this.value = this.value.slice(0, 2); 
       }
      
       if (parseInt(this.value) > max) {

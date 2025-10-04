@@ -76,15 +76,23 @@ button{
 .status h5{
     margin-top: 30px;
 }
-.get_{
+.get_g{
     position: absolute;
     bottom: 25px;
-    right: 250px
+    right: 250px;
 }
 .finalResult{
     background-color: #ddd;
     border-radius: 10px;
     color:#333;
+    width: 300px;
+    height: 540px;
+    text-align: center;
+}
+.finalResult_r{
+    background-color: #ddd;
+    border-radius: 10px;
+    color:#8b0303;
     width: 300px;
     height: 540px;
     text-align: center;
@@ -102,4 +110,9 @@ button:hover{
     transform: scale(1.05) translateY(-4px);
     background-color: #02a571;
     color: #333;
+}
+.finalResult_r:hover{
+    transform: scale(1.05) translateY(-4px);
+    background-color: #8b0303;
+    color: #ffffff;
 }
