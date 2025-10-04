@@ -28,7 +28,7 @@ function checkResult() {
                             <h5>Student Name: ${studentName}</h5><br>
                             <h5>Final Grade: ${finalGrade}</h5><br>
                             <h5>Result: ${hasPassed? "Passed!" : "Failed! Repeat this class."}</h5>
-                            <h5>${isExcellent? "Excellent!" : "Try better next time."}</h5>>
+                            <h5>${isExcellent? "Excellent!" : "Try better next time."}</h5>
                     </div>
                     </div>
                     `;
